@@ -1,0 +1,43 @@
+Vatsal K. Gurjar
++91 9429151831 · Vadodara, Gujarat  ·   vatsal1gurjar1@gmail.com    ·    Vatsal Gurjar | LinkedIn
+SUMMARY	___
+Full-stack software engineer with hands-on experience building production-grade systems using FastAPI, React 18, TypeScript, and PostgreSQL. Currently working full-time at Rang Digitech LLC, delivering role-based enterprise applications and AI automation pipelines. Experienced in n8n, LangChain, and OpenAI APIs. Shipped 2 production systems to date, including a role-based Daily Reporting System with KRA analytics, and an AI automation pipeline reducing manual reporting effort across the organization.
+EDUCATION	___
+ITM (sls) university Vadodara, Gujarat, India	  Jul 2021 – Jun 2025
+BTech in Computer Science.                                                                                                                                                                                 CGPA-7.43/10
+TECHNICAL SKILLS	___
+Languages: Python, TypeScript, JavaScript, C, R
+Frontend: React 18, Vite, Tailwind CSS, Zustand, React Hook Form, Recharts, shadcn/ui
+Backend & DB: FastAPI, SQLAlchemy, Pydantic v2, PostgreSQL, Node.js, REST APIs
+AI & Tools: LangChain, n8n, OpenAI APIs, OpenCV, Git, JWT Auth, Axios
+WORK EXPERIENCE	___
+Junior Software Engineer, Rang Digitech LLC	Jan 2026 - Present
+  Full-time · Vadodara, Gujarat, India · On-site
+•	Built a full-stack Daily Reporting System with React 18 + TypeScript + Vite and FastAPI + PostgreSQL, featuring role-based approval workflows, KRA performance analytics, a dynamic template engine, and JWT-secured REST APIs.
+•	Implemented JWT authentication, Zustand state management, React Hook Form, and Axios for API integration; used SQLAlchemy 2.0 with Pydantic v2 for schema validation and ORM-based data handling.
+AI Automation Engineer, Rang Digitech LLC	Sep 2025 - Dec 2025
+  Internship · Vadodara, Gujarat, India · On-site
+•	Developed AI automation pipelines using n8n, LangChain, and OpenAI APIs integrated with FastAPI backends, enabling intelligent document processing and automated workflow execution.
+•	Engineered end-to-end automation workflows using Python, connecting AI models to business systems via REST APIs; reduced manual reporting effort through scheduled task automation and PostgreSQL-backed data pipelines.
+Web Management Head, Hexsociety	Mar 2023 - Oct 2024
+  Full-time · Vadodara, Gujarat, India · On-site
+•	Led the development of Hexsociety.in, a dynamic community platform using Node.js, HTML, CSS, and JavaScript, fostering connections through forums, events, and collaborative projects with a modern UI/UX.
+•	Managed end-to-end technical setup and backend infrastructure for club events; led event hosting, AV coordination, and all tech logistics across 10+ community events over 1.5 years.
+Software Developer, MSK   solutions	Feb 2024 - Apr 2024
+  Hubballi, Karnataka
+•	Built a multi-modal translation system integrating gesture recognition (OpenCV), real-time speech-to-text/text-to-speech, and multilingual translation via Google APIs, enabling accessible communication for the speech and hearing impaired.
+PROJECTS	___
+Silence Sense: Amplifying silence through communication (A full stack project)	  Sep 2023 - Nov 2023
+•	Created “Silent Sense”, a Python-based translation app with Tkinter UI, using OpenCV and Mediapipe for gesture-to-text translation, tailored for the Hearing and Speech Impaired.
+•	Implemented APIs and Google Libraries to enhance text-to-speech, speech-to-text and traditional translation features, fostering social inclusion for the deaf and mute community.
+Cloverse: AI-Powered Collaborative Learning Platform	                      2024–25
+•	Built a full-stack academic platform using React + Vite, Node.js, Express, MongoDB, and WebRTC supporting real-time chat, video conferencing, and collaborative document editing for distributed student teams.
+•	Integrated OpenAI APIs to power automated note summarization, quiz generation, and AI-driven performance feedback; implemented Auth0 for secure authentication across the platform.
+CERTIFICATIONS	___
+Foundations of User Experience (UX) Design Google  ( Skills: UI/UX, Graphic Designing)	                           Jan 2024
+Supervised Machine Learning: Regression and Classification Stanford  (Skills: Machine Learning)	                           Jan 2024
+LEADERSHIP	                                                                                                                                                                                                     __
+•	Led a 5-member team to a top 25 finish nationwide out of 600+ teams in the GTU Code Unnati Innovation Marathon, collaborating with SAP Labs India and Edunet Foundation as finalists.
+HONORS AND AWARDS                                                                                                                                                                                                              ________   __
+GOLD medalist in Line Follower Race	                                 2023
+GOLD medalist (3x) in Table Tennis, College Sports Fest	                   2021 – 2024
