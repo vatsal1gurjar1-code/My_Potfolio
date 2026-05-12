@@ -17,7 +17,7 @@ export const projects = [
     heroImage: "/projects/silent-sense-hero.png",
     resources: {
       report: "/projects/silent-sense-report.pdf",
-      ppt: "/projects/silent-sense-presentation.pdf",
+      ppt: "/projects/silent-sense-presentation.pptx",
       logo: "/projects/silent-sense-logo.png"
     }
   },
