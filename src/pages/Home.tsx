@@ -1,8 +1,11 @@
-import { motion } from "framer-motion";
-import { ArrowRight, Download, Mail, MapPin, Sparkles } from "lucide-react";
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { ArrowRight, Briefcase, Download, FileText, Mail, MapPin, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import { PDFDownloadLink } from "@react-pdf/renderer";
-import { ResumePDF } from "@/components/ResumePDF";
+// @ts-ignore
+import ITResumeUrl from "@/Resume/Vatsal_Gurjar_Resume_IT_LLT.docx";
+// @ts-ignore
+import StartupResumeUrl from "@/Resume/Vatsal_Gurjar_Resume_Startup.docx";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,6 +23,8 @@ const metrics = [
 ];
 
 export function Home() {
+  const [showResumeOptions, setShowResumeOptions] = useState(false);
+
   return (
     <motion.section
       initial={{ opacity: 0, y: 18 }}
@@ -63,19 +68,84 @@ export function Home() {
               View Projects
               <ArrowRight className="h-4 w-4" />
             </Link>
-            <PDFDownloadLink
-              document={<ResumePDF />}
-              fileName="Vatsal_K_Gurjar_Resume.pdf"
+            <button
+              onClick={() => setShowResumeOptions(true)}
               className={buttonVariants({ variant: "secondary", size: "lg" })}
-              style={{ textDecoration: "none" }}
             >
-              {({ loading }) => (
-                <>
-                  <Download className="h-4 w-4" />
-                  {loading ? "Preparing..." : "Download Resume"}
-                </>
+              <Download className="h-4 w-4" />
+              Download Resume
+            </button>
+
+            <AnimatePresence>
+              {showResumeOptions && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+                  {/* Backdrop overlay */}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.15 }}
+                    onClick={() => setShowResumeOptions(false)}
+                    className="absolute inset-0 bg-background/85 backdrop-blur-sm"
+                  />
+
+                  {/* Modal Panel */}
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95, y: 12 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.95, y: 12 }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    className="relative w-full max-w-md overflow-hidden rounded-3xl border border-white/10 bg-secondary/95 p-6 shadow-2xl backdrop-blur-xl"
+                  >
+                    <div className="mb-6 text-center">
+                      <h3 className="text-lg font-bold text-foreground sm:text-xl">Select Resume Version</h3>
+                      <p className="mt-2 text-xs text-muted-foreground sm:text-sm">
+                        Choose the resume tailored for your specific target role profile.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-col gap-3">
+                      <a
+                        href={ITResumeUrl}
+                        download="Vatsal_Gurjar_Resume_IT_LLT.docx"
+                        onClick={() => setShowResumeOptions(false)}
+                        className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-background/50 p-4 transition hover:border-primary/30 hover:bg-background/80"
+                      >
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition group-hover:scale-105 group-hover:bg-primary group-hover:text-primary-foreground">
+                          <FileText className="h-5 w-5" />
+                        </div>
+                        <div className="flex flex-col text-left">
+                          <span className="text-sm font-semibold text-foreground sm:text-base">IT Corporate Role</span>
+                          <span className="mt-0.5 text-xs text-muted-foreground">Standard formatted professional DOCX</span>
+                        </div>
+                      </a>
+
+                      <a
+                        href={StartupResumeUrl}
+                        download="Vatsal_Gurjar_Resume_Startup.docx"
+                        onClick={() => setShowResumeOptions(false)}
+                        className="group flex items-center gap-4 rounded-2xl border border-white/5 bg-background/50 p-4 transition hover:border-accent/30 hover:bg-background/80"
+                      >
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:scale-105 group-hover:bg-accent group-hover:text-accent-foreground">
+                          <Briefcase className="h-5 w-5" />
+                        </div>
+                        <div className="flex flex-col text-left">
+                          <span className="text-sm font-semibold text-foreground sm:text-base">Startup / Growth Role</span>
+                          <span className="mt-0.5 text-xs text-muted-foreground">High-impact execution & metrics DOCX</span>
+                        </div>
+                      </a>
+                    </div>
+
+                    <button
+                      onClick={() => setShowResumeOptions(false)}
+                      className="mt-5 w-full rounded-xl py-2 text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground transition hover:text-foreground"
+                    >
+                      Cancel
+                    </button>
+                  </motion.div>
+                </div>
               )}
-            </PDFDownloadLink>
+            </AnimatePresence>
             <Link to="/contact" className={buttonVariants({ variant: "ghost", size: "lg" })}>
               <Mail className="h-4 w-4" />
               Contact Me

@@ -43,7 +43,7 @@ export function ProjectCard({
                 {features.slice(0, 3).map((feature) => (
                   <li key={feature} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 flex-none text-primary" />
-                    <span className="line-clamp-1">{feature}</span>
+                    <span className="leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
