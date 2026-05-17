@@ -11,14 +11,14 @@ import { Home } from "@/pages/Home";
 import { Projects } from "@/pages/Projects";
 import { ProjectDetail } from "@/pages/ProjectDetail";
 import { Skills } from "@/pages/Skills";
-import { MeshLandscape } from "@/components/MeshLandscape";
+import { MeshBackground } from "@/components/MeshBackground";
 
 export default function App() {
   const location = useLocation();
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      <MeshLandscape />
+      <MeshBackground />
       <Navbar />
       <main className="relative">
         <AnimatePresence mode="wait">
