@@ -8,7 +8,7 @@ const links = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 py-10">
+    <footer className="relative z-10 border-t border-white/10 py-10">
       <div className="page-shell flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-display text-xl font-bold">Vatsal K. Gurjar</p>

@@ -45,9 +45,24 @@ export function Home() {
           </motion.div>
 
           <Badge className="mb-6">Available for high-impact software roles</Badge>
-          <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
-            Vatsal K. <span className="text-gradient">Gurjar</span>
-          </h1>
+          <div className="relative inline-block">
+            <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+              Vatsal K. <span className="text-gradient">Gurjar</span>
+            </h1>
+            {/* Animated Glowing Line */}
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1, scaleX: 1 }}
+              transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+              className="absolute -bottom-2 left-0 h-[3px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent"
+            />
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 0.6, scaleX: 1 }}
+              transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+              className="absolute -bottom-2 left-0 h-[4px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent blur-md"
+            />
+          </div>
           <p className="mt-6 max-w-2xl text-xl font-medium text-foreground/90">
             Building scalable web systems, AI automation pipelines, and intelligent software platforms.
           </p>
